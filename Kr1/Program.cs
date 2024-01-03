@@ -31,16 +31,16 @@ class Program
         {
             T[] newArray = FilterByLength(originalArray, 3);
 
-            Console.WriteLine("Original array:");
+            Console.WriteLine("Начальный массив:");
             DisplayArray(originalArray);
 
-            Console.WriteLine("\nNew array (items with a length not exceeding 3 characters):");
+            Console.WriteLine("\nНовый массив:");
             DisplayArray(newArray);
 
-            Console.WriteLine("Press 'Enter' to continue or type 'exit' to break the loop.");
+            Console.WriteLine("Введите q для выхода из программы");
             string input = Console.ReadLine();
 
-            if (input.ToLower() == "exit")
+            if (input.ToLower() == "q")
             {
                 break;
             }
